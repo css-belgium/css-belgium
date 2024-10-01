@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Table</title>
+    <title>Searchable Table</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            color: navy;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 20px 0;
+            box-sizing: border-box;
+            border: 2px solid navy;
+            border-radius: 4px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            background-color: navy;
+            color: white;
         }
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid white;
         }
         th, td {
             padding: 8px 12px;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #003366;
         }
         @media screen and (max-width: 600px) {
             table, thead, tbody, th, td, tr {
@@ -56,192 +71,217 @@
 </head>
 <body>
 
-    <table>
-        <thead>
-            <tr>
-                <th>NAME</th>
-                <th>30-ITEMS</th>
-                <th>10-ITEMS</th>
-                <th>PARTIAL GRADE</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="NAME">BELANDRES, RICHARD CADALZO</td>
-                <td data-label="30-ITEMS">10</td>
-                <td data-label="10-ITEMS">5</td>
-                <td data-label="PARTIAL GRADE">72</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">BERDIN, JESTONIE BAYO</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">BEROU, JOBERT HATAGUE</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">CALLUENG, MARC CEDRIC BELANDRES</td>
-                <td data-label="30-ITEMS">10</td>
-                <td data-label="10-ITEMS">10</td>
-                <td data-label="PARTIAL GRADE">86</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">CALO, JOHN ROBERT CAPANGPANGAN</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">CASTRO, NERALD HORA</td>
-                <td data-label="30-ITEMS">25</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">85</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">CORTEZ, JERALD MEL ATAMOSA</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">GALGO, ZALDREN LEYROS</td>
-                <td data-label="30-ITEMS">15</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">81</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">GONZALES, JC KYLLE MADJOS</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">IDOL, KETCH LANADA</td>
-                <td data-label="30-ITEMS">30</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">87</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">LAMOSTE, CHRISTOPHER RAE</td>
-                <td data-label="30-ITEMS">30</td>
-                <td data-label="10-ITEMS">10</td>
-                <td data-label="PARTIAL GRADE">95</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">MAHUSAY, LENARCH GENTIO</td>
-                <td data-label="30-ITEMS">15</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">81</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">MARILLA, RAYMOND OCA</td>
-                <td data-label="30-ITEMS">10</td>
-                <td data-label="10-ITEMS">5</td>
-                <td data-label="PARTIAL GRADE">72</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">MARILLA, RICHARD OCA</td>
-                <td data-label="30-ITEMS">15</td>
-                <td data-label="10-ITEMS">5</td>
-                <td data-label="PARTIAL GRADE">73</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">MIOT, TEJAY MARBAN</td>
-                <td data-label="30-ITEMS">15</td>
-                <td data-label="10-ITEMS">5</td>
-                <td data-label="PARTIAL GRADE">73</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">MOSQUEDA, CRISTIAN JAY TIMBAL</td>
-                <td data-label="30-ITEMS">10</td>
-                <td data-label="10-ITEMS">5</td>
-                <td data-label="PARTIAL GRADE">72</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">ROSALES, NEAL DERIGAY</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">ESTRELLA, YASUMASA</td>
-                <td data-label="30-ITEMS">10</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">79</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">GALVEZ, REY</td>
-                <td data-label="30-ITEMS">15</td>
-                <td data-label="10-ITEMS">5</td>
-                <td data-label="PARTIAL GRADE">73</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">BAJON, PRINCESS GENERALAO</td>
-                <td data-label="30-ITEMS">30</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">87</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">BANTUNO, GWEN ANGELES</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">BERMOY, EDZIEL JANE CONSIGNA</td>
-                <td data-label="30-ITEMS">0</td>
-                <td data-label="10-ITEMS">0</td>
-                <td data-label="PARTIAL GRADE">63</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">BINGA-AN, RISHEL PACALDO</td>
-                <td data-label="30-ITEMS">10</td>
-                <td data-label="10-ITEMS">10</td>
-                <td data-label="PARTIAL GRADE">86</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">CASINILLO, JESSEL MARTINEZ</td>
-                <td data-label="30-ITEMS">30</td>
-                <td data-label="10-ITEMS">10</td>
-                <td data-label="PARTIAL GRADE">95</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">DELIMA, CHARIZ TUBA</td>
-                <td data-label="30-ITEMS">30</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">87</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">EBAYA, CRYSTAL DACILLO</td>
-                <td data-label="30-ITEMS">20</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">83</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">GIBAN, XYRISH CLEAR AVILA</td>
-                <td data-label="30-ITEMS">30</td>
-                <td data-label="10-ITEMS">10</td>
-                <td data-label="PARTIAL GRADE">95</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">LASPINAS, DIANA BHABE T</td>
-                <td data-label="30-ITEMS">15</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">81</td>
-            </tr>
-            <tr>
-                <td data-label="NAME">SIBATON, KRISSANTHA SIMBAJON</td>
-                <td data-label="30-ITEMS">25</td>
-                <td data-label="10-ITEMS">8</td>
-                <td data-label="PARTIAL GRADE">85</td>
-            </tr>
-        </tbody>
-    </table>
+<h2>Search Student Records</h2>
+<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for names..">
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>30-ITEMS</th>
+            <th>10-ITEMS</th>
+            <th>PARTIAL GRADE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="NAME">BELANDRES, RICHARD CADALZO</td>
+            <td data-label="30-ITEMS">10</td>
+            <td data-label="10-ITEMS">5</td>
+            <td data-label="PARTIAL GRADE">72</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">BERDIN, JESTONIE BAYO</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">BEROU, JOBERT HATAGUE</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">CALLUENG, MARC CEDRIC BELANDRES</td>
+            <td data-label="30-ITEMS">10</td>
+            <td data-label="10-ITEMS">10</td>
+            <td data-label="PARTIAL GRADE">86</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">CALO, JOHN ROBERT CAPANGPANGAN</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">CASTRO, NERALD HORA</td>
+            <td data-label="30-ITEMS">25</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">85</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">CORTEZ, JERALD MEL ATAMOSA</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">GALGO, ZALDREN LEYROS</td>
+            <td data-label="30-ITEMS">15</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">81</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">GONZALES, JC KYLLE MADJOS</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">IDOL, KETCH LANADA</td>
+            <td data-label="30-ITEMS">30</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">87</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">LAMOSTE, CHRISTOPHER RAE</td>
+            <td data-label="30-ITEMS">30</td>
+            <td data-label="10-ITEMS">10</td>
+            <td data-label="PARTIAL GRADE">95</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">MAHUSAY, LENARCH GENTIO</td>
+            <td data-label="30-ITEMS">15</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">81</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">MARILLA, RAYMOND OCA</td>
+            <td data-label="30-ITEMS">10</td>
+            <td data-label="10-ITEMS">5</td>
+            <td data-label="PARTIAL GRADE">72</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">MARILLA, RICHARD OCA</td>
+            <td data-label="30-ITEMS">15</td>
+            <td data-label="10-ITEMS">5</td>
+            <td data-label="PARTIAL GRADE">73</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">MIOT, TEJAY MARBAN</td>
+            <td data-label="30-ITEMS">15</td>
+            <td data-label="10-ITEMS">5</td>
+            <td data-label="PARTIAL GRADE">73</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">MOSQUEDA, CRISTIAN JAY TIMBAL</td>
+            <td data-label="30-ITEMS">10</td>
+            <td data-label="10-ITEMS">5</td>
+            <td data-label="PARTIAL GRADE">72</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">ROSALES, NEAL DERIGAY</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">ESTRELLA, YASUMASA</td>
+            <td data-label="30-ITEMS">10</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">79</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">GALVEZ, REY</td>
+            <td data-label="30-ITEMS">15</td>
+            <td data-label="10-ITEMS">5</td>
+            <td data-label="PARTIAL GRADE">73</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">BAJON, PRINCESS GENERALAO</td>
+            <td data-label="30-ITEMS">30</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">87</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">BANTUNO, GWEN ANGELES</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">BERMOY, EDZIEL JANE CONSIGNA</td>
+            <td data-label="30-ITEMS">0</td>
+            <td data-label="10-ITEMS">0</td>
+            <td data-label="PARTIAL GRADE">63</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">BINGA-AN, RISHEL PACALDO</td>
+            <td data-label="30-ITEMS">10</td>
+            <td data-label="10-ITEMS">10</td>
+            <td data-label="PARTIAL GRADE">86</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">CASINILLO, JESSEL MARTINEZ</td>
+            <td data-label="30-ITEMS">30</td>
+            <td data-label="10-ITEMS">10</td>
+            <td data-label="PARTIAL GRADE">95</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">DELIMA, CHARIZ TUBA</td>
+            <td data-label="30-ITEMS">30</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">87</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">EBAYA, CRYSTAL DACILLO</td>
+            <td data-label="30-ITEMS">20</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">83</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">GIBAN, XYRISH CLEAR AVILA</td>
+            <td data-label="30-ITEMS">30</td>
+            <td data-label="10-ITEMS">10</td>
+            <td data-label="PARTIAL GRADE">95</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">LASPINAS, DIANA BHABE T</td>
+            <td data-label="30-ITEMS">15</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">81</td>
+        </tr>
+        <tr>
+            <td data-label="NAME">SIBATON, KRISSANTHA SIMBAJON</td>
+            <td data-label="30-ITEMS">25</td>
+            <td data-label="10-ITEMS">8</td>
+            <td data-label="PARTIAL GRADE">85</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function searchTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("studentTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 1; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0]; // Search by name
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
